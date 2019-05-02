@@ -1,0 +1,13 @@
+<%- include ./header.ejs %>
+<%- include('./topnav.ejs', {'title': '发布', 'num': 3}); %>
+<ul class="content-box">
+    <form id="form" method="post" onsubmit="return false">
+        <div class="publish-texarea">
+            <textarea name="myPublish" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="publist-submit">
+            <input type="submit" value="留言" onclick="publish()">
+        </div>
+    </form>
+</ul>
+<%- include ./footer.ejs %>

@@ -1,0 +1,25 @@
+<%-include ./header.ejs %>
+<%-include('./topnav.ejs', {'title': '我的论坛', 'num': 1}); %>
+<ul class="content-box">
+    <% result.forEach(function(item) { %>
+        <li>
+            <p class="content-title"><%=item.name %></p>
+            <div class="content-inn"><%=item.bbs %></div>
+            <div class="content-fun clear">
+                <p data-id="<%=item.c_id %>" class="comment-bbs">评论</p>
+                <!-- <p>关注</p> -->
+            </div>
+            <% if(item.comment) { %>
+                <ul class="content-ul">
+                    <% item.comment.forEach(function(val) { %>
+                        <li>
+                            <span><%=val.name %>:</span>
+                            <span><%=val.comment %></span>
+                        </li>
+                    <% }) %>
+                </ul>
+            <% } %>
+        </li>
+    <% }) %>
+</ul>
+<%-include ./footer.ejs %>

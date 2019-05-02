@@ -1,0 +1,196 @@
+.clear:after {
+    content: '';
+    height: 0;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+.content {
+    position: relative;
+}
+.login {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login p {
+    text-align: right;
+    font-size: 10px;
+    color: #5f5959;
+}
+.login p a {
+    cursor: pointer;
+}
+.login-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-label, .login-submit {
+    height: 35px;
+    margin: 20px 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+.login-label input {
+    width: 100%;
+    padding: 0 10px;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+}
+.login-submit {
+    border: 0;
+}
+.login-submit input {
+    width: 100%;
+    padding: 0 10px;
+    height: 100%;
+    background: #00a1ff;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background: #3880ec;
+    text-align: center;
+}
+.header-return {
+    width: 50px;
+    float: left;
+}
+.header-title {
+    width: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.header-menu {
+    width: 50px;
+    float: right;
+    position: relative;
+}
+.header-menu img {
+    width: 28px;
+    height: 28px;
+}
+.header-menu-list {
+    width: 80px;
+    height: auto;
+    background: #dedede;
+    position: absolute;
+    display: none;
+    left: -30px;
+    top: 50px;
+}
+.header-menu-list li {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.header-menu-list li a {
+    text-decoration: none;
+    color: #000000;
+}
+.header-menu-list li.active {
+    background: #656565;
+}
+.header-menu-list li.active a {
+    color: #ffffff;
+}
+
+.content-box {
+    padding: 0 10px;
+}
+.content-box>li {
+    height: auto;
+    margin: 10px 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+.content-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.content-inn {
+    height: auto;
+    line-height: 20px;
+    font-size: 14px;
+    color: #656565;
+}
+.content-fun {
+    height: auto;
+}
+.content-fun p {
+    width: 80px;
+    height: 20px;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    color: #00a1ff;
+}
+.content-ul {
+    height: auto;
+    margin-bottom: 10px;
+}
+.content-ul li {
+    height: auto;
+    line-height: 15px;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #656565;
+}
+.publish-texarea {
+    width: auto;
+    height: auto;
+    margin: 20px 10px 10px;
+}
+.publish-texarea textarea {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    resize: none;
+}
+.publist-submit {
+    width: auto;
+    height: auto;
+    margin: 0 10px 10px;
+    overflow: hidden;
+}
+.publist-submit input[type='submit'] {
+    float: right;
+    padding: 8px 25px;
+    background: #3880ec;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.comment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    /* display: none; */
+}
+.comment-box {
+    width: auto;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
