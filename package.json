@@ -1,0 +1,26 @@
+{
+  "name": "Node",
+  "version": "1.0.0",
+  "description": "\"# Node\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyq111/Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyq111/Node/issues"
+  },
+  "homepage": "https://github.com/zyq111/Node#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "md5-node": "^1.0.1",
+    "mongodb": "^2.2.31",
+    "node-uuid": "^1.4.8"
+  }
+}

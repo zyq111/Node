@@ -1,0 +1,34 @@
+<ul class="header clear">
+    <li class="header-return"></li>
+    <li class="header-menu">
+        <img src="image/m1.png" alt="">
+        <ul class="header-menu-list">
+            <% if(num === 0) { %>
+                <li class="active"><a href="albbs">全部论坛</a></li>
+            <% } else { %>
+                <li><a href="albbs">全部论坛</a></li>
+            <% } %>
+
+            <% if(num === 1) { %>
+                <li class="active"><a href="mybbs">我的论坛</a></li>
+            <% } else { %>
+                <li><a href="mybbs">我的论坛</a></li>
+            <% } %>
+
+            <!-- <% if(num === 2) { %>
+                <li class="active"><a href="bbs">关注论坛</a></li>
+            <% } else { %>
+                <li><a href="bbs">关注论坛</a></li>
+            <% } %> -->
+
+            <% if(num === 3) { %>
+                <li class="active"><a href="publish">发布BBS</a></li>
+            <% } else {%>
+                <li><a href="publish">发布BBS</a></li>
+            <% } %>
+        </ul>
+    </li>
+    <li class="header-title">
+        <%= title %>
+    </li>
+</ul>
