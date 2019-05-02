@@ -10,7 +10,10 @@ models/router.js
 ```
 npm install
 ```
-2、数据库可以自己创建只需在 models/mongodb.js修改数据库名
+2、数据库可以自己创建只需在 models/mongodb.js修改数据库名,我的数据库名是bbs
+```
+const url = 'mongodb://localhost:27017/bbs'
+```
 3、 可以选择在全局安装supervisor
 ```
 npm install -g supervisor
